@@ -16,13 +16,13 @@ body {
 	@include container;
         width:100%;
     @media #{$small} {
-        width:66.66666667%;
+        width:90%;
     }
     @media #{$medium} {
-        width:51%;
+        width:70%;
     }
     @media #{$x-large} {
-        width:37.5%;
+        width:60%;
     }
 	padding: 2em 0 0;
 	font-family: $heading-font;
