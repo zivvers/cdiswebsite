@@ -19,7 +19,7 @@ body {
         width:90%;
     }
     @media #{$medium} {
-        width:70%;
+        width:80%;
     }
     @media #{$x-large} {
         width:60%;
@@ -41,32 +41,32 @@ body {
 	display: block;
 	@include font-rem(24);
 	@media #{$small} {
-		@include grid(12,2);
+		@include grid(12,4);
 		@include prefix(12,0);
 		@include suffix(12,0);
 		@include font-rem(16);
 	}
 	@media #{$x-large} {
-		@include grid(12,2);
+		@include grid(12,4);
 		@include prefix(12,0);
 	}
 }
 
 /* Top navigation links */
 .top-navigation {
-	@include grid(12,10);
+	@include grid(12,8);
 	@include prefix(12,1);
 	@include suffix(12,1);
 	margin-bottom: 1em;
 	float: none;
 	display: block;
 	@media #{$small} {
-		@include grid(12,10);
+		@include grid(12,8);
 		@include prefix(12,0);
 		@include suffix(12,0);
 	}
 	@media #{$x-large} {
-		@include grid(12,10);
+		@include grid(12,8);
 	}
 	ul {
 		margin: 0;
