@@ -1,0 +1,29 @@
+{% extends "about.html" %}
+{% set sub_active_page = "leadership" %}
+
+{% block mainblock %}
+<section class='gallery'>
+{% set leadership = [
+	('/static/img/leadership/robert_grossman.jpg','Robert Grossman, PhD','Director'),
+	('/static/img/leadership/allison_heath.png','Allison Heath, PhD','Director of Research'),
+	('/static/img/leadership/michael_ford.jpg','Michael Ford, CISSP, CISM','Director of Cloud Operations '),
+	('/static/img/leadership/piers_nash.jpg','Piers Nash, MBA, PhD', 'Director of Business Development'),
+	('/static/img/leadership/maria_patterson.jpg','Maria Patterson, PhD', 'Director of the Open Science Data Cloud '),
+	('/static/img/leadership/karl_rademacher.png', 'Karl Rademacher, CISSP, EnCE, GCIH', 'Director of Security '),
+	('/static/img/leadership/danielle.jpg','Danielle Troyer', 'Director of Administration and Finance')] %}
+	{% for img, name, title in leadership %}
+	{% if (loop.index-1)%3 == 0 %}
+	<div class='row'>
+	{% endif %}
+		<div class='column column-3'>
+			<img src="{{img}}">
+			<p>{{name}}</p>
+			<p class='desc'>{{title}}</p>
+		</div>
+	{% if (loop.index)%3 == 0 %}
+	</div> 
+	{% endif %}
+	{% endfor %}
+</section>
+
+{% endblock %}
