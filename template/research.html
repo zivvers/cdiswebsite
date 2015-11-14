@@ -92,6 +92,11 @@
 				<article>
 					We engage with innovative research teams across a variety of disciplines around the world.
 				</article>
+				{% for img in ["INRG-HEADER-with-flags.jpg", "cri.jpeg", "ICGC_Logo_eng_large.jpg",
+					"jhu.png", "northwestern.png", "OICR2logo.png", "EMBL_EBI_Logo_white.png", "ASGC TWGrid.jpg", 
+					"nsf1.eps", "nci.png", "OCC_RGB_HORIZ.jpg", "ci_site_logo.png", "ITM-Logo.jpg", "igsb_204x84.png"]%}
+					<img src="/static/img/collaborator-logos/{{img}}">
+				{% endfor %}
 			</section>
 		{% endblock %}
 		</section>
