@@ -370,6 +370,10 @@ article a:hover {
 	margin-right: 10px;
 	transition:0.2s ease-in-out;
 }
+.icon.gdc {
+	width: 250px;
+
+}
 .icon:hover {
 	box-shadow: 0 0 10px #dfdfdf;
 }
