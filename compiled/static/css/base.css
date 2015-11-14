@@ -17,6 +17,9 @@ box-sizing:border-box;
 ul {
 	list-style: none;
 }
+section ul {
+	margin-bottom: 1em;
+}
 a {
 	text-decoration: none;
 	color: inherit;
