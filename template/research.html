@@ -4,6 +4,9 @@
 {% if not sub_active_page %}
 	{% set sub_active_page='Research' %}
 {% endif %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/research.css">
+{% endblock %}
 {% block main %}
 
 	<section class='block'>
@@ -92,10 +95,12 @@
 				<article>
 					We engage with innovative research teams across a variety of disciplines around the world.
 				</article>
-				{% for img in ["INRG-HEADER-with-flags.jpg", "cri.jpeg", "ICGC_Logo_eng_large.jpg",
-					"jhu.png", "northwestern.png", "OICR2logo.png", "EMBL_EBI_Logo_white.png", "ASGC TWGrid.jpg", 
-					"nsf1.eps", "nci.png", "OCC_RGB_HORIZ.jpg", "ci_site_logo.png", "ITM-Logo.jpg", "igsb_204x84.png"]%}
-					<img src="/static/img/collaborator-logos/{{img}}">
+				{% for img in [
+					"INRG-HEADER-with-flags.jpg", "OICR2logo.png", "nci.png", "igsb_204x84.png",
+					"cri.jpeg", "ICGC_Logo_eng_large.jpg",
+					"jhu.png", "northwestern.png", "EMBL_EBI_Logo_white.png", "ASGC TWGrid.jpg", 
+					"nsf1.png", "OCC_RGB_HORIZ.jpg", "ci_site_logo.png", "ITM-Logo.jpg", ]%}
+					<img class="research-logo" src="/static/img/collaborator-logos/{{img}}">
 				{% endfor %}
 			</section>
 		{% endblock %}
