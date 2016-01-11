@@ -14,8 +14,6 @@
 		<section class='sidebar'>
 				<ul>
 				{% set nav_bar = [
-					('#','Research'),
-					('#researchinterests','Research Interests'),
 					('#pilot','Pilot Projects'),
 					('#funding','Funding Opportunities'),
 					('#collaborators','Collaborators'),
@@ -29,27 +27,6 @@
 		{% endblock %}
 		<section class='main-block'>
 		{% block mainblock %}
-			<section id='researchinterests'>
-				<div>
-					<h2>Research Interests</h2>
-				</div>
-				<article>
-					<ul class='items'>
-						<li>
-							<p>Data Commons and Data Clouds </p>
-						</li>
-						<li>
-							<p>Bioinformatics </p>
-						</li>
-						<li>
-							<p>High Performance Analytics </p>
-						</li>
-						<li>
-							<p>Pipelines for large scale data analysis </p>
-						</li>
-					</ul>
-				</article>
-			</section>
 			<section id='pilot'>
 				<div>
 					<h2>Pilot Projects</h2>
@@ -77,7 +54,6 @@
 							<p class='desc'>Kevin White, PhD</p>
 						</li>
 					</ul>
-
 				</article>
 			</section>
 			<section id='funding'>

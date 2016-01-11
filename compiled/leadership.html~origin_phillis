@@ -11,7 +11,7 @@
 
 
 <link rel="stylesheet"  type="text/css" href="/static/css/responsive.css">
-<title>CDIS -  Funding </title>
+<title>CDIS -  About </title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 				
 					<li><a href="/" >HOME</a></li>
 				
-					<li><a href="/about.html" >ABOUT</a></li>
+					<li><a href="/about.html"  class='active' >ABOUT</a></li>
 				
 					<li><a href="/research.html" >RESEARCH</a></li>
 				
@@ -44,17 +44,17 @@
 	</header>
 	<main >
 		
-		<section class='banner banner-FUNDING'>
+		<section class='banner banner-ABOUT'>
 		
 
-			<p>Funding</p>
+			<p>About</p>
 			<style type="text/css">
 			.banner{
-				background-image:url('/static/img/banner-funding.jpg');
+				background-image:url('/static/img/banner-about.jpg');
 			}
 			@media screen and (max-width:930px){
 				.banner{
-					background-image:url('/static/img/mobile/banner-funding.jpg');
+					background-image:url('/static/img/mobile/banner-about.jpg');
 				}	
 			}
 			</style>
@@ -64,32 +64,96 @@
 		
 		<div class='main' id='main'>
 		
+
 	<section class='block'>
-		<div class='middle'>
-			<div>
-				<h1>Funding Opportunities</h1>
-			</div>
-			<article>
-				The Center for Data Intensive Science provides funding and support to University of Chicago researchers for projects leveraging data science with data clouds and data commons. CDIS offers a collaborative approach to stimulate data-driven research across disciplines, defuse technological barriers, and promote discovery through informatics. 
+		
+		<section class='sidebar'>
+				<ul>
+				
+				
+				<li><a href="#about" >Who We Are</a></li>
+				
+				<li><a href="#contact" >Contact</a></li>
+				
+				</ul>
+		</section>
+		
+		<section class='main-block'>
+		
+<section class='gallery'>
 
-			</article>
-			
+	
+	
+	<div class='row'>
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/robert_grossman.jpg">
+			<p>Robert Grossman, PhD</p>
+			<p class='desc'>Director</p>
 		</div>
-			
-			
-<div class='share'>
-	<p class='icon-share-alt'></p>
-	<div class='share-detail'>
-		<p>Share</p>
-		<a href='https://plus.google.com/share?url=http://cdis.uchicago.edu/funding.html' class='icon-google-plus'></a>
-		<a href='https://www.facebook.com/sharer/sharer.php?u=funding.html' class='icon-facebook'></a>
-		<a href='https://twitter.com/intent/tweet?text=http://cdis.uchicago.edu/funding.html' class='icon-twitter'></a>
-	</div>
-
-</div>
+	
+	
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/allison_heath.png">
+			<p>Allison Heath, PhD</p>
+			<p class='desc'>Director of Research</p>
+		</div>
+	
+	
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/michael_ford.jpg">
+			<p>Michael Ford, CISSP, CISM</p>
+			<p class='desc'>Director of Cloud Operations </p>
+		</div>
+	
+	</div> 
+	
+	
+	
+	<div class='row'>
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/piers_nash.jpg">
+			<p>Piers Nash, MBA, PhD</p>
+			<p class='desc'>Director of Business Development</p>
+		</div>
+	
+	
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/maria_patterson.jpg">
+			<p>Maria Patterson, PhD</p>
+			<p class='desc'>Director of the Open Science Data Cloud </p>
+		</div>
+	
+	
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/karl_rademacher.png">
+			<p>Karl Rademacher, CISSP, EnCE, GCIH</p>
+			<p class='desc'>Director of Security </p>
+		</div>
+	
+	</div> 
+	
+	
+	
+	<div class='row'>
+	
+		<div class='column column-3'>
+			<img src="/static/img/leadership/danielle.jpg">
+			<p>Danielle Troyer</p>
+			<p class='desc'>Director of Administration and Finance</p>
+		</div>
+	
+	
+</section>
 
 
 	</section>
+	
 
 
 		</div>

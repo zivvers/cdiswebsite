@@ -73,8 +73,11 @@
 				
 				<li><a href="#about" >Who We Are</a></li>
 				
+<<<<<<< HEAD:compiled/people.html
 				<li><a href="#leadership"  class='active' >leadership</a></li>
 				
+=======
+>>>>>>> origin/phillis:compiled/leadership.html
 				<li><a href="#contact" >Contact</a></li>
 				
 				</ul>
@@ -192,7 +195,7 @@
 			</nav>
 		</section>
 		<section class='copyright'>
-			© 2015 . Center for Data Intensive Science & The University of Chicago. 
+			© 2015. Center for Data Intensive Science & The University of Chicago. 
 		</section>
 		
 

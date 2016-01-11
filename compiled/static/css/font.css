@@ -90,6 +90,8 @@
 }
 .icon-share:before {
 	content: "\e903";
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
 .icon-left-quote:before {
 	content: "\e904";
@@ -97,10 +99,51 @@
 .icon-right-quote:before {
 	content: "\e905";
 }
+=======
+}
+=======
+}
+>>>>>>> origin/phillis
+.icon-left-quote:before {
+	content: "\e904";
+<<<<<<< HEAD
+}
+.icon-right-quote:before {
+	content: "\e905";
+}
+<<<<<<< HEAD
+>>>>>>> origin/phillis
+=======
+>>>>>>> origin/phillis
 .icon-chart:before {
 	content: "\e906";
 }
 .icon-menu:before {
 	content: "\e907";
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/phillis
+=======
+}
+.icon-right-quote:before {
+	content: "\e905";
+}
+.icon-chart:before {
+	content: "\e906";
+}
+<<<<<<< HEAD
+
+>>>>>>> add collaborators logos, change home page
+=======
+.icon-menu:before {
+	content: "\e907";
+}
+>>>>>>> Add menu icon
+<<<<<<< HEAD
+>>>>>>> origin/phillis
+=======
+>>>>>>> origin/phillis
 
