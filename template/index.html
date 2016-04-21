@@ -21,28 +21,42 @@
 		<div><h1>News</h1>
 		</div>
 		{% set news = [
-			{'img':'/static/img/news/sc15.jpg', 
-			 'date': '15 Nov 2015', 
-			 'title': 'Annual Super Computing Conference',
-			 'article': 'Along with the international supercomputing community, we  exhibited at <a href="http://sc15.supercomputing.org">SC15</a> in Austin, TX.  We showcased innovations in data commons and data peering supporting numerous scientific research communities, including specialized commons for cancer genomic data, weather data, and satellite imagery.  Thanks to all who stopped by booth #749 to check out CDIS and our collaborators.'},
+			{'img':'/static/img/news/careers.png', 
+			 'date': '19 April 2016', 
+			 'title': 'Join our Team',
+			 'article': 'We are looking for data engineers, data scientists, and bioinformaticians to join our team.  We have a range of projects offering opportunities to use your skills on critical initiatives in cancer, genomics, and environmental research. Check out our <a href="http://cdis.uchicago.edu/current-openings.html">current openings</a>.',
+			 'link': 'http://cdis.uchicago.edu/current-openings.html'},
+
+			{'img': '/static/img/news/volunteer.png',
+			 'date': '16 April 2016',
+			 'title': 'Volunteer Opportunities',
+			 'article': 'Do you share our passion of using data science to make an impact on important problems? Consider joining our team as a volunteer to contribute in an area of your expertise and fuel your curiousity.  Your generosity and support are critical to delivering on our ambitious mission. <a href="mailto:cdis@uchicago.edu">Send</a> us a letter of interest along with your resume to inquire about current opportunities.',
+			 'link': 'http://cdis.uchicago.edu/careers.html'},
 			
-			{'img': '/static/img/news/savethedate3.png',
-			 'date': '16 March 2016',
-			 'title': 'Accelerating Discoveries with Big Data + Supercomputing',
-			 'article': 'The CDIS Seminar Series will feature Alok Choudhary on March 16th at 12:00pm who will be presenting "Accelerating Discoveries with Big Data + Supercomputing."  Alok is the Henry and Isabel Dever Professor of Electrical Engineering and Computer Science and a Professor of at Kellogg School of Management at Northwestern University. He is the founding director of the Center for Ultra-scale Computing and Information Security (CUCIS), which involves several schools, national labs and universities.  Mark your calendar and <a href="http://cdis.eventbrite.com">register for the event.</a>',
-			 'link': '/static/img/news/SeminarSeries_March2.jpg'},
+			{'img': '/static/img/news/mychoice.png',
+			 'date': '01 April 2016',
+			 'title': 'Summer Internship Openings',
+			 'article': 'We have partnered with myCHOICE to provide real-world practical experience beyond academic research for graduate students and postdoctoral trainees. We are offering two CDIS Internships for a Genomic Data Commons Ambassador team and a Data Science User Liaison team during the summer session. <a href="http://www.mychoice.uchicago.edu/#!e3intern/c20ms">Submit</a>  your application by April 22nd!',
+			 'link': 'http://www.mychoice.uchicago.edu/#!e3intern/c20ms'},
+			
+			{'img': '/static/img/news/aacr2016.png',
+			 'date': '16 April 2016', 
+			 'title': 'AACR Annual Meeting 2016',
+			 'article': 'We joined our colleagues at the NCI Center for Cancer Genomics for the American Association for Cancer Research Annual Meeting in New Orleans. They hosted a session on Initiatives to Further Precision Medicine where we talked about the NCI Genomic Data Commons we are building and its role in CCG initiatives. The <a href="http://www.cancer.gov/about-nci/organization/ccg/programs/gdc">NCI Genomic Data Commons</a> will be available to public this June!',
+			 'link': 'http://www.aacr.org/Meetings/Pages/MeetingDetail.aspx?EventItemID=63#.VxU1MJMrIUF'},
 
 			
+			{'img': '/static/img/news/bioit2016.jpg',
+			 'date': '05 April 2016', 
+			 'title': 'BioIT World 2016',
+			 'article': 'We were in Boston with our fellow industry and academic colleagues at BioIT World talking about our work developing large-scale data commons for genomic and clinical data. The landscape is changing for sharing research data, exemplifying the need for integrating and interoperating in-house genomic and clinical data with public data commons and private data partnerships.',
+			'link': 'http://www.bio-itworldexpo.com/'},
+
 			{'img': '/static/img/news/weijenchang.png',
 			 'date': '02 Feb 2016', 
 			 'title': 'WeiJen Chang appointed as Visiting Scientist',
 			 'article': 'WeiJen Chang is an engineer and operations deputy at Academia Sinica Grid Computing Center in Taipei, Taiwan where he is charged with data center operations, software development and software/hardware purchase planning. He was part of the "CernVM File System" and "Distributed Data Management" projects for software development at CERN, which is the tier 0 center of the Large Hadron Collider experiment. He is currently collaborating on the Biomedical Data Commons Technical Pilot at CDIS.'},
-
-			{'img': '/static/img/news/gdclogo.png',
-			 'date': '20 Nov 2014', 
-			 'title': 'University of Chicago selected to build the Genomic Data Commons',
-			 'article': 'The National Cancer Institute is establishing the NCI <a href="https://gdc.nci.nih.gov/">Genomic Data Commons</a> to store, analyze and distribute cancer genomics data generated by NCI and other research organizations. The GDC will provide an interactive system for researchers to access data, with the goal of advancing the molecular diagnosis of cancer and suggest potential therapeutic targets based on genomic information.  <a href="http://www.cancer.gov/news-events/press-releases/2014/GenomicDataCommonsNewsNote">Read more.</a>'},
-			] 
+			 ] 
 		%}
 		{% set news_number = news|length %}
 		{% set slide_number = (news_number/3)|round(0,'ceil')|int %}
@@ -100,7 +114,6 @@
 	<section class='dark block'>
 		<div class='featured-projects wrapper'>
 		<div>
-			<h1>Featured Resources</h1>
 		</div>
 			<section>
 				<a href="/technology.html" class='circle'>
