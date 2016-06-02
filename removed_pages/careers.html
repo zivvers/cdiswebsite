@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %} Careers {% endblock %}
+
+{% set active_page = "CAREERS" %}
+{% if not sub_active_page %}
+{% set sub_active_page='Working at CDIS' %}
+{% endif %}
+{% block main %}
+	<section class='block'>
+		{% block sidebar %}
+		<section class='sidebar'>
+				<ul>
+				{% set nav_bar = [
+					('/careers.html','Working at CDIS'),
+					('/current-openings.html','Current Openings'),
+					] %}
+				{% for href, caption in nav_bar %}
+				<li><a href="{{href}}" {% if caption == sub_active_page %} class='active' {% endif %}>{{caption}}</a></li>
+				{% endfor %}
+				</ul>
+		</section>
+		{% endblock %}
+		<section class='main-block'>
+			{% block mainblock %}
+			<section>
+				<div>
+					<h2>Working at the Center for Data Intensive Science</h2>
+				</div>
+				<article>
+					<p>
+						We're a dedicated team of researchers and engineers drawing from different backgrounds and ideas to push the boundaries of data intensive science. Our mission is to pioneer translational data intensive science to advance biology, medicine, healthcare, and the environment. Our research interests include data commons, bioinformatics, high performance analytics, virtualized infrastructure, and pipelines for large-scale data analysis.  We work closely with researchers at the University of Chicago and others around the world to pursue discovery and make an impact on society.
+					</p>
+				</article>
+			</section>
+			<section>
+				<div>
+					<h2>Current Openings</h2>
+				</div>
+				<article>
+					<p>
+						View our current job openings and apply with the requisition number at UChicago Jobs.
+					</p>	
+					<p>
+						<a class='button' target='_blank' href="/current-openings.html">View Openings
+						</a>
+					
+					</p>
+				</article>
+				<div>
+				</div>
+			</section>
+			<section>
+					<h2>We offer excellent benefits</h2>
+				<article>
+					<div class='block'>
+						<p>Health & Welfare Benefits</p>
+						<ul class='bullets'>
+							<li>5 Medical Plans</li>
+							<li>2 Dental Plans</li>
+							<li>Vision Plan</li>
+							<li>Healthcare Flexible Spending</li>
+							<li>Health Savings Account</li>
+							<li>Life and Disability Insurance</li>
+							<li>Long Term Care Insurance</li>
+							<li>On-Site Childcare Program</li>
+							<li>Staff and Faculty Assistance Program</li>
+							<li>Adoption Assistance Program</li>
+							<li>Childcare Referral Services</li>
+							<li>Elder Care Referral Service</li>
+							<li>Retiree Medical Insurance</li>						
+						</ul>
+					</div>
+					<div class='block'>
+						<p> Tuition Benefits</p>
+						<ul class='bullets'>
+							<li>Professional Development</li>
+							<li>Staff Education Assistance Program</li>
+							<li>Dependent Children Education Assistance Program</li>
+						</ul>
+					</div>
+					<div class='block'>
+						<p>Retirement & Financial Benefits</p>
+						<ul class='bullets'>
+							<li>Retirement Income Program</li>
+							<li>Supplemental Retirement Program</li>
+							<li>Staff Pension Plan</li>
+							<li>Employer-Assisted Housing Program</li>
+							<li>Dependent Care Flexible Spending</li>
+							<li>Qualified Transportation Benefits</li>
+							<li>Perks and Discounts</li>
+						</ul>
+					</div>
+					<div class='block'>
+						<p>Vacation, Holidays & Time Off Benefits</p>
+						<ul class='bullets'>
+							<li>8 Paid Holidays</li>
+							<li>15 Vacation Days</li>
+							<li>5 Personal Holidays</li>
+							<li>10 Sick Days</li>
+							<li>Leave of Absence Programs</li>
+							<li>Short & Long Term Disability</li>
+						</ul>
+					</div>
+					<p class='comment'>The University of Chicago is an Affirmative Action / Equal Opportunity / Disabled / Veterans Employer.</p>
+				</article>
+			</section>
+				<section>
+				<div>
+					<h2>Contact Us</h2>
+				</div>
+				<article>
+					<p>
+						For questions about our open positions, contact us at <a href="mailto:cdis-jobs@lists.uchicago.edu">cdis-jobs@lists.uchicago.edu. </a 
+					</p>	
+				</article>
+				<div>
+				</div>
+			</section>	
+			{% endblock %}
+			{% import 'util.html' as util %}
+			{{ util.share(active_page) }}
+		</section>
+
+	</section>
+
+
+{% endblock %}

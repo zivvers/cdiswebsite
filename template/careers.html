@@ -1,18 +1,26 @@
 {% extends "base.html" %}
 {% block title %} Careers {% endblock %}
-
 {% set active_page = "CAREERS" %}
 {% if not sub_active_page %}
-{% set sub_active_page='Working at CDIS' %}
+	{% set sub_active_page='Careers' %}
 {% endif %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/research.css">
+{% endblock %}
 {% block main %}
+
 	<section class='block'>
 		{% block sidebar %}
 		<section class='sidebar'>
 				<ul>
 				{% set nav_bar = [
-					('/careers.html','Working at CDIS'),
-					('/current-openings.html','Current Openings'),
+					('/careers.html','Join our Team'),
+					('#current openings','Current Openings'),
+					('#volunteer opportunities','Volunteer Opportunities'),
+					('#student openings','Student and Trainee Openings'),
+					('#benefits','Benefits'),
+					('#contact','Contact Us'),
+
 					] %}
 				{% for href, caption in nav_bar %}
 				<li><a href="{{href}}" {% if caption == sub_active_page %} class='active' {% endif %}>{{caption}}</a></li>
@@ -21,36 +29,83 @@
 		</section>
 		{% endblock %}
 		<section class='main-block'>
-			{% block mainblock %}
-			<section>
+		{% block mainblock %}
+			<section id='Join our Team'>
 				<div>
-					<h2>Working at the Center for Data Intensive Science</h2>
+					<h2>Join our Team</h2>
 				</div>
 				<article>
-					<p>
-						We're a dedicated team of researchers and engineers drawing from different backgrounds and ideas to push the boundaries of data intensive science. Our mission is to pioneer translational data intensive science to advance biology, medicine, healthcare, and the environment. Our research interests include data commons, bioinformatics, high performance analytics, virtualized infrastructure, and pipelines for large-scale data analysis.  We work closely with researchers at the University of Chicago and others around the world to pursue discovery and make an impact on society.
-					</p>
+					We're a dedicated team of researchers and engineers drawing from different backgrounds and ideas to push the boundaries of data intensive science. Our mission is to pioneer translational data intensive science to advance biology, medicine, healthcare, and the environment. Our research interests include data commons, bioinformatics, high performance analytics, virtualized infrastructure, and pipelines for large-scale data analysis.  We work closely with researchers at the University of Chicago and others around the world to pursue discovery and make an impact on society.
 				</article>
 			</section>
-			<section>
+			<section id='Current Openings'>
 				<div>
 					<h2>Current Openings</h2>
 				</div>
 				<article>
-					<p>
-						View our current job openings and apply with the requisition number at UChicago Jobs.
-					</p>	
-					<p>
-						<a class='button' target='_blank' href="/current-openings.html">View Openings
-						</a>
-					
-					</p>
+					View our current staff job openings and apply with the requisition number at <a href="https://jobopportunities.uchicago.edu">UChicago Jobs</a>.
+					<ul class='items'
+						<li>
+							<p>	
+								<h2>Senior Bioinformatician</h2>
+								<p class='desc'>Requisition# 099991. The Bioinformatician will design and implement bioinformatics services for faculty for projects in the Center for Data Intensive Science. The Bioinfomatician will work on developing pipelines for this project, including support for high-throughput genomic technologies.  </p>
+								<a class='button' target='_blank' href='jobopportunities.uchicago.edu/applicants/Central?quickFind=230721'>Apply at UChicago Jobs</a>
+							</p>
+						</li>
+						<li>
+							<p><h2>Technical Support Engineer</h2>
+							<p class='desc'>Join our product support team dedicated to the launch of the Genomic Data Commons, one of the world’s largest storage and distribution system for cancer genomics.</p>
+							<a class='button' href="/static/pdf/TechnicalSupportEngineer.pdf">Detail</a>
+							<a class='button' target='_blank' href='jobopportunities.uchicago.edu/applicants/Central?quickFind=230966'>Apply at UChicago Jobs</a>
+						</p>
+						</li>
+						<li>
+							<p><h2>Software Engineer</h2></p>
+							<p class='desc'>Coming soon</p>
+						</li>
+						<li>
+							<p>Information Security Analyst</p>
+							<p class='desc'>Coming soon</p>
+						</li>
+						<li>
+							<p>Software Engineer in Test</p>
+							<p class='desc'>Coming soon</p>
+						</li>
+					</ul>
 				</article>
-				<div>
-				</div>
 			</section>
-			<section>
-					<h2>We offer excellent benefits</h2>
+			<section id='Volunteer Opportunities'>
+				<div>
+					<h2>Volunteer Opportunities</h2>
+				</div>
+				<article>
+					Do you share our passion of using data science to make an impact on important problems? Consider joining our team as a volunteer to contribute in an area of your expertise and fuel your curiousity. Your generosity and support are critical to delivering on our ambitious mission.
+					<p>Send a letter of interest to <a href="mailto:cdis-jobs@lists.uchicago.edu">cdis-jobs@lists.uchicago.edu</a>. 
+				</article>
+			</section>
+			<section id='Student and Trainee Openings'>
+				<div>
+					<h2>Student and Trainee Openings</h2>
+				</div>
+				<article>
+					<ul class='items'
+						<li>
+							<p>	
+								<h2>Postdoctoral Scholar</h2>
+								<p class='desc'>Send a letter of interest to <a href="mailto:cdis-postdocs@lists.uchicago.edu">cdis-postdocs@lists.uchicago.edu</a></p>
+							</p>
+						</li>
+						<li>
+							<p><h2>Student Programmer</h2>
+							<p class='desc'>Send a letter of interest to <a href="mailto:cdis-jobs@lists.uchicago.edu">cdis-jobs@lists.uchicago.edu</a>
+						</p>
+						</li>
+				</article>
+			</section>
+			<section id='Benefits'>
+				<div>
+					<h2>Benefits</h2>
+				</div>
 				<article>
 					<div class='block'>
 						<p>Health & Welfare Benefits</p>
@@ -104,7 +159,7 @@
 					<p class='comment'>The University of Chicago is an Affirmative Action / Equal Opportunity / Disabled / Veterans Employer.</p>
 				</article>
 			</section>
-				<section>
+			<section id='Contact Us'>
 				<div>
 					<h2>Contact Us</h2>
 				</div>
@@ -113,15 +168,10 @@
 						For questions about our open positions, contact us at <a href="mailto:cdis-jobs@lists.uchicago.edu">cdis-jobs@lists.uchicago.edu. </a 
 					</p>	
 				</article>
-				<div>
-				</div>
-			</section>	
-			{% endblock %}
-			{% import 'util.html' as util %}
-			{{ util.share(active_page) }}
+			</section>
+		{% endblock %}
 		</section>
-
 	</section>
-
+	
 
 {% endblock %}
